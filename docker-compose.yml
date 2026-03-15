@@ -1,0 +1,28 @@
+services:
+  atm10tts:
+    build:
+      context: .
+      secrets:
+        - cf_api_key
+      args:
+        - CF_PROJECT_ID=925200
+    container_name: atm10tts
+    ports:
+      - "25565:25565"
+    volumes:
+      - server_data:/server
+      - ./eula.txt:/server/eula.txt
+    deploy:
+      resources:
+        limits:
+          memory: 10G
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+
+volumes:
+  server_data:
+
+secrets:
+  cf_api_key:
+    file: ./cf_api_key
