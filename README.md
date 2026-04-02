@@ -7,7 +7,7 @@ Servidor Minecraft do modpack **All The Mods 10: To the Sky (ATM10SKY)** rodando
 ### 1. Chave de API do CurseForge
 Crie um arquivo `cf_api_key` na raiz do projeto contendo sua chave de API:
 ```bash
-echo "SUA_CHAVE_AQUI" > cf_api_key
+echo 'SUA_CHAVE_AQUI' > cf_api_key
 ```
 > **Importante:** Nunca compartilhe ou commite esse arquivo. Adicione `cf_api_key` ao seu `.gitignore`.
 ### 2. EULA do Minecraft
