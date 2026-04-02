@@ -5,7 +5,7 @@ services:
       secrets:
         - cf_api_key
       args:
-        - CF_PROJECT_ID=925200
+        - CF_PROJECT_ID=1298402
     container_name: atm10tts
     ports:
       - "25565:25565"
