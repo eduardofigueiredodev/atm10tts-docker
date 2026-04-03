@@ -17,6 +17,9 @@ services:
         limits:
           memory: 10G
     restart: unless-stopped
+    dns:
+       - 1.1.1.1
+       - 8.8.8.8
     stdin_open: true
     tty: true
 
